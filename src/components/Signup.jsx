@@ -5,6 +5,7 @@ import {login} from '../store/authSlice'
 import {Button, Input, Logo} from './index.js'
 import {useDispatch} from 'react-redux'
 import {useForm} from 'react-hook-form'
+import logo from '../assets/logo.png'
 
 function Signup() {
     const navigate = useNavigate()
@@ -27,11 +28,11 @@ function Signup() {
     }
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center my-10">
             <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
             <div className="mb-2 flex justify-center">
                     <span className="inline-block w-full max-w-[100px]">
-                        <Logo width="100%" />
+                        <img src={logo} className="w-40 rounded-md" alt="Blog App" />
                     </span>
                 </div>
                 <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
